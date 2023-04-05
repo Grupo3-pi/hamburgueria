@@ -1,4 +1,4 @@
-#Projeto Integrador Univesp 2023 - Grupo 3
+# Projeto Integrador Univesp 2023 - Grupo 3
 
 ## Cardapio interativo utilizando Django/Python
 
