@@ -16,7 +16,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['hamburgueria-six-rose.vercel.app']
 
-ALLOWED_HOSTS = ['127.0.0.1']
+# ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
