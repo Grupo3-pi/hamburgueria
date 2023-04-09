@@ -1,6 +1,5 @@
 from pathlib import Path
 import os
-import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -15,7 +14,7 @@ SECRET_KEY = 'django-insecure-y*2)t66u$(@!3l5&01u(nblayp-q3m0*^)1q1#vhhjvur-tq5!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
