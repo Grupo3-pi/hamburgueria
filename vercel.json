@@ -1,0 +1,14 @@
+{
+    "builds":[
+        {
+        "src":"hamburgueria/wsgi.py",
+        "use":"@vercel/python"
+        }
+    ],
+    "router":[
+        {
+            "src":"/(.*)",
+            "dest":"hamburgueria/wsgi.py"
+        }
+    ]
+}
