@@ -15,8 +15,8 @@ class Prato(models.Model):
         return self.nome_prato
 
 class Cardapio(models.Model):
-    prato = models.ForeignKey(Prato, on_delete=models.CASCADE)
-    Ingrediente = models.ForeignKey(Ingredientes, on_delete=models.CASCADE)
+    prato = models.ForeignKey(Prato, on_delete=models.DO_NOTHING)
+    Ingrediente = models.ForeignKey(Ingredientes, on_delete=models.DO_NOTHING)
 
     def __str__(self) -> str:
         return self.prato
