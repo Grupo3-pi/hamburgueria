@@ -1,6 +1,9 @@
 from pathlib import Path
 import os
 
+import dj_database_url
+DATABASES['default'] = dj_database_url.config()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -65,20 +68,20 @@ WSGI_APPLICATION = 'hamburgueria.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+#DATABASES = {
+ #   'default': {
+ #       'ENGINE': 'django.db.backends.sqlite3',
+ #       'NAME': BASE_DIR / 'db.sqlite3',
+ #   }
+#}
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'id17932809_fav',
-        'USER': 'id17932809_login',
-        'PASSWORD': '',
-        'HOST': 'localhost',
+        'NAME': 'cardapio_db',
+        'USER': 'grupo3_ti_pi',
+        'PASSWORD': 'Univesp_pi-g3',
+        'HOST': 'cardapio-db.cicotqjevhcp.us-east-1.rds.amazonaws.com',
         'PORT': '3306',
     }
 }
