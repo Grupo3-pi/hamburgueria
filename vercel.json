@@ -6,7 +6,7 @@
     }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "hamburgueria/hamburgueria/wsgi.py" }
+    { "src": "/(.*)", "dest": "hamburgueria/wsgi.py" }
   ],
   "env": {
     "DJANGO_SETTINGS_MODULE": "hamburgueria.settings",
