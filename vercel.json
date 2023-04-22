@@ -1,12 +1,12 @@
 {
   "builds": [
     {
-      "src": "hamburgueria/wsgi.py",
+      "src": "hamburgueria/hamburgueria/wsgi.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "hamburgueria/wsgi.py" }
+    { "src": "/(.*)", "dest": "hamburgueria/hamburgueria/wsgi.py" }
   ],
   "env": {
     "DJANGO_SETTINGS_MODULE": "hamburgueria.settings",
@@ -18,11 +18,6 @@
     "DATABASE_PASSWORD": "Univesp_pi-g3",
     "DATABASE_HOST": "cardapio-db.cicotqjevhcp.us-east-1.rds.amazonaws.com",
     "DATABASE_PORT": "3306"
-  },
-  "build": {
-    "env": {
-      "BUILD_COMMAND": "python manage.py migrate"
-    }
   }
 
 }
