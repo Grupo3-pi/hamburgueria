@@ -72,16 +72,16 @@ DATABASES = {
     }
 }
 
-#DATABASES = {
- #   'default': {
-  #      'ENGINE': 'django.db.backends.mysql',
-   #     'NAME': 'cardapio_db',
-    #    'USER': 'root',
-     #   'PASSWORD': '123456',
-      #  'HOST': 'localhost',
-       # 'PORT': '3306',
- #   }
-#}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'id17932809_fav',
+        'USER': 'id17932809_login',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
