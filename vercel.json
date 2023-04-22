@@ -7,6 +7,10 @@
   ],
   "routes": [
     { "src": "/(.*)", "dest": "hamburgueria/wsgi.py" }
-  ]
-  
+  ],
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "hamburgueria.settings",
+    "SECRET_KEY": "django-insecure-*9v!y#rvq&&tu(ihbhi85ev*01wbtsq1ii_oa=7x%t(0_awp-!",
+    "DEBUG": "false"
+  }
 }
