@@ -11,7 +11,13 @@
   "env": {
     "DJANGO_SETTINGS_MODULE": "hamburgueria.settings",
     "SECRET_KEY": "django-insecure-y*2)t66u$(@!3l5&01u(nblayp-q3m0*^)1q1#vhhjvur-tq5!",
-    "DEBUG": "false"
+    "DEBUG": "false",
+    "DATABASE_ENGINE": "django.db.backends.mysql",
+    "DATABASE_NAME": "cardapio_db",
+    "DATABASE_USER": "grupo3_ti_pi",
+    "DATABASE_PASSWORD": "Univesp_pi-g3",
+    "DATABASE_HOST": "cardapio-db.cicotqjevhcp.us-east-1.rds.amazonaws.com",
+    "DATABASE_PORT": "3306"
   }
 
 }
