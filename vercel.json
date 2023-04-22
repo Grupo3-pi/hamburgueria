@@ -12,11 +12,6 @@
     "DJANGO_SETTINGS_MODULE": "hamburgueria.settings",
     "SECRET_KEY": "django-insecure-y*2)t66u$(@!3l5&01u(nblayp-q3m0*^)1q1#vhhjvur-tq5!",
     "DEBUG": "false"
-  },
-  "build": {
-    "env": {
-      "BUILD_COMMAND": "python manage.py migrate"
-    }
   }
 
 }
