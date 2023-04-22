@@ -1,12 +1,12 @@
 {
   "builds": [
     {
-      "src": "hamburgueria/hamburgueria/wsgi.py",
+      "src": "hamburgueria/wsgi.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "hamburgueria/wsgi.py" }
+    { "src": "/(.*)", "dest": "hamburgueria/hamburgueria/wsgi.py" }
   ],
   "env": {
     "DJANGO_SETTINGS_MODULE": "hamburgueria.settings",
