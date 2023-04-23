@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -75,15 +76,19 @@ WSGI_APPLICATION = 'hamburgueria.wsgi.application'
 
 
 
+#DATABASES = {
+  #  'default': {
+  #      'ENGINE': 'django.db.backends.mysql',
+    #    'NAME': 'cardapio_db',
+   #     'USER': 'grupo3_ti_pi',
+   #     'PASSWORD': 'Univesp_pi-g3',
+   #     'HOST': 'cardapio-db.cicotqjevhcp.us-east-1.rds.amazonaws.com',
+  #      'PORT': '3306',
+  #  }
+#}
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'cardapio_db',
-        'USER': 'grupo3_ti_pi',
-        'PASSWORD': 'Univesp_pi-g3',
-        'HOST': 'cardapio-db.cicotqjevhcp.us-east-1.rds.amazonaws.com',
-        'PORT': '3306',
-    }
+    'default': dj_database_url.config(),
 }
 
 # Password validation
